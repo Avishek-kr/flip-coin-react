@@ -1,11 +1,10 @@
 import './App.css';
-import Lottery from './components/Lottery';
+import FlipCoin from './components/FlipCoin';
 
 function App() {
   return (
     <div className="App">
-      <Lottery />
-      <Lottery title ='Mini Lotto' maxBalls={4} maxNum={10} />
+      <FlipCoin />
     </div>
   );
 }

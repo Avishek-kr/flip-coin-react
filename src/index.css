@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.image_container img {
+  width: 300px;
+}
+
+.image_container.animating {
+  animation-name: rotate;
+  animation-duration: 1s;
+}
+
+.image_container {
+  position: relative;
+  height: 320px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: #8d09c7;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+button:disabled {
+  background-color: #590080;
+}
+
+@keyframes rotate {
+  from {
+      transform: rotateY(0deg)
+  } 10% {
+      transform: rotateY(60deg)
+  } 30% {
+      transform: rotateY(180deg)
+  } 50% {
+      transform: rotateY(240deg)
+  } 60% {
+      transform: rotateY(280deg)
+  } 80% {
+      transform: rotateY(320deg)
+  } to {
+      transform: rotateY(360deg)
+  }
+}
