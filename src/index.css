@@ -40,6 +40,25 @@ button:disabled {
   background-color: #590080;
 }
 
+.color__content {
+  height: 200px;
+  flex: 16%;
+}
+
+.color__container {
+  width: 66%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .color__content {
+    flex: 33.3%;
+  }
+  
+}
+
 @keyframes rotate {
   from {
       transform: rotateY(0deg)
